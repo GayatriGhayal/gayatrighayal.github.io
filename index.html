@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayatri Govind Ghayal | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">GG</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+    <!-- Full name top-left -->
+    <div class="home-name">Gayatri Govind Ghayal</div>
+
+    <!-- Left-aligned content -->
+    <div class="home-content">
+        <h1>Full Stack Web Developer</h1>
+        <p>
+            Entry-level Web Developer with hands-on experience in Java, MySQL, PHP, HTML, CSS, and JavaScript. 
+            Proficient in developing responsive web applications, implementing user authentication, designing databases, and building RESTful logic. 
+            Strong problem-solving skills and experience contributing to academic projects using Git and GitHub.
+        </p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </div>
+
+    <!-- Right side image -->
+    <div class="home-image">
+        <img src="images/gayatri g.JPG" alt="Coding Illustration">
+    </div>
+</section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Front-End</h3>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+
+            <div class="skill-category">
+                <h3>Back-End</h3>
+                <span>Java</span>
+                <span>PHP</span>
+                <span>REST APIs</span>
+            </div>
+
+            <div class="skill-category">
+                <h3>Database</h3>
+                <span>MySQL</span>
+                <span>Database Design</span>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Responsive Personal Portfolio Website</h3>
+        <p>Developed a fully responsive portfolio website using HTML, CSS and JavaScript to showcase my skills, projects, and resume.</p>
+    </div>
+
+    <div class="project">
+        <h3>Mental Health Assessment System</h3>
+        <p>Created a web application to assess mental health through a quiz and provide suggestions for improvement. Built using PHP, HTML, CSS, JavaScript and MySQL.</p>
+    </div>
+</section>
+
+    <!-- RESUME -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <!-- View Resume -->
+        <a href="files/resume.pdf" target="_blank" class="btn">View Resume</a>
+
+        <!-- Download Resume -->
+        <a href="files/resume.pdf" download="Gayatri_Govind_Ghayal_Resume.pdf" class="btn">Download Resume</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:gayatrighayal2004@gmail.com">gayatrighayal2004@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+918888336540">+91 8888336540</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/gayatri-ghayal-" target="_blank">www.linkedin.com/in/gayatri-ghayal-</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/GayatriGhayal" target="_blank">github.com/GayatriGhayal</a></p>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Gayatri Govind Ghayal. All rights reserved.</p>
+    </footer>
+
+    <!-- JS to force download -->
+    <script>
+        const downloadBtn = document.querySelector('#resume .btn[download]');
+        downloadBtn.addEventListener('click', function(e){
+            e.preventDefault();
+            const link = document.createElement('a');
+            link.href = this.href;
+            link.download = 'Gayatri_Govind_Ghayal_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+
+</body>
+</html>

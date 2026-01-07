@@ -1,0 +1,256 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fdfdfd;
+}
+
+/* NAVBAR */
+nav {
+    background: #4B2C91;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HOME */
+.home {
+    position: relative;
+    min-height: 80vh;
+    background: #E6E0F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* space between content and image */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2E0854;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 38px;
+    color: #4B2C91;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* IMAGE ON HOME */
+.home-image img {
+    max-width: 340px; /* adjust size */
+    height: auto;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 25px;
+    background: #6FA8DC;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #4B2C91;
+}
+
+/* SKILLS */
+#skills {
+    text-align: center;
+}
+
+#skills h2 {
+    color: #4B2C91;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-category {
+    background: #E6E0F8;
+    padding: 25px 20px;
+    border-radius: 12px;
+    min-width: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+    color: #4B2C91;
+    margin-bottom: 15px;
+}
+
+.skill-category span {
+    display: inline-block;
+    background: #6FA8DC;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.skill-category span:hover {
+    background: #4B2C91;
+}
+
+/* PROJECTS */
+#projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4B2C91;
+}
+
+.project {
+    background: #F3F0FA;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #4B2C91;
+}
+
+/* RESUME */
+#resume {
+    text-align: center;
+}
+
+#resume h2 {
+    color: #4B2C91;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    color: #4B2C91;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 8px;
+}
+
+/* Contact links hover */
+#contact a {
+    color: #6FA8DC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #4B2C91;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background: #4B2C91;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .home-image img {
+        max-width: 80%;
+        margin-top: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
